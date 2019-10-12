@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1570871396111.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2685791277",
+    "id" : "FA6E2FC0",
+    "lastKnownWriteTime" : 1570871449,
+    "last_content_update" : 1570871449024,
+    "path" : "C:/Users/AngusMacDonald/OneDrive - MONOCLE SOLUTIONS (PTY) LTD/Desktop/FPL/FixtureDiff_Final.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "21,57",
+        "scrollLine" : "1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

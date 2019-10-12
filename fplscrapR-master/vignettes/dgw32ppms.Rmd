@@ -1,0 +1,30 @@
+---
+title: "Top options by FPL points per 90 mins"
+author: "Rasmus Wiscostretford"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+Suppose we are interested in the top options from '18/19, measured by FPL points per 90 mins (pp90)?
+
+With fplscrapR, we can do that just a few lines of code:
+
+```{r, message=F,warning=F}
+library(fplscrapR)
+library(dplyr)
+```
+
+```{r,warning=F}
+df <- get_player_info(season=18)
+
+df %>% 
+  filter(total_points >= 30) %>% # filtering for players with more than 30 points scored
+  mutate(pp90 = total_points / minutes * 90) %>% # creating the 'pp90' variable
+  select(playername,pp90) %>% # selecting player name and pp90 for our table
+  arrange(-pp90) %>% # ordering (arranging) by pp90
+  slice(1:20) # showing just the top20
+```
