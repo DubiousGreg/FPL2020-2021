@@ -19,7 +19,7 @@
 # length, say GWs 10:17, or a smaller range of GWs 10:14. Thus we want
 # this function to be flexible.
 
-# Once we have this range we can begin to subset the data.
+# Once we have this range we can move forward.
 
 GW_Sub <- function(GW,GW_range){
   
