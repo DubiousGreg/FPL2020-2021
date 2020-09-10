@@ -113,8 +113,6 @@ Get_Team_Diff <- function(Data, GW_start, GW_length) {
 # First load libraries and import the datasets
 #---------------------------------------------
 
-setwd()
-
 library(readr)
 library(readxl)
 library(tidyverse)
